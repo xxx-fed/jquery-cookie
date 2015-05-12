@@ -1,0 +1,6 @@
+{
+    "repos": "https://github.com/carhartl/jquery-cookie.git",
+    "version": "v1.4.1",
+    "name": "jquery-cookie",
+    "main": "jquery.cookie.js"
+}
