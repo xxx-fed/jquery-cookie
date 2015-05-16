@@ -52,7 +52,10 @@
             options = $.extend({}, config.defaults, options);
             if (typeof options.expires === 'number') {
                 var days = options.expires, t = options.expires = new Date();
+                //按天算
                 t.setTime(+t + days * 86400000);
+                //按毫秒算
+                //t.setTime(t.getTime() + days);
             }
             return document.cookie = [
                 encode(key),
