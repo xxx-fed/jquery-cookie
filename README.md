@@ -63,35 +63,34 @@
 
 
 
-Delete cookie:
+删除cookie:
 
-```javascript
-// Returns true when cookie was found, false when no cookie was found...
-$.removeCookie('the_cookie');
 
-// Same path as when the cookie was written...
-$.removeCookie('the_cookie', { path: '/' });
-```
+	$.removeCookie('the_cookie');
+	
+	$.removeCookie('the_cookie', { path: '/' });
 
-*Note: when deleting a cookie, you must pass the exact same path, domain and secure options that were used to set the cookie, unless you're relying on the default options that is.*
+	*当删除cookie，你必须通过相同的路径，域和安全选项，是用来设置cookie，除非你依靠默认的选项是*
 
-## Configuration
+
+
+## 配置
 
 ### raw
 
-By default the cookie value is encoded/decoded when writing/reading, using `encodeURIComponent`/`decodeURIComponent`. Bypass this by setting raw to true:
 
-```javascript
-$.cookie.raw = true;
-```
+默认情况下cookie的值是通过用 `encodeURIComponent`/`decodeURIComponent`.进行解码和编码 你可以设置raw为true进行绕过:
+
+	$.cookie.raw = true;
+
 
 ### json
 
-Turn on automatic storage of JSON objects passed as the cookie value. Assumes `JSON.stringify` and `JSON.parse`:
+进行cookie的值的json进行转换. Assumes `JSON.stringify` and `JSON.parse`:
 
-```javascript
-$.cookie.json = true;
-```
+
+	$.cookie.json = true;
+
 
 ## Cookie Options
 
